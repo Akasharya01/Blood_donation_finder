@@ -1,5 +1,8 @@
 <resources>
-    <string name="app_name">xyz</string>
+    <string name="app_name">Trusty Blood-Donation|Finder</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_web_client_id" translatable="false">342688372168-d2p5tvpl5u97dpnt0docsulk8tjqg8qf.apps.googleusercontent.com</string>
+    <string name="OpenDrawer">Open navigation drawer</string>
+    <string name="CloseDrawer">Close navigation drawer</string>
 </resources>

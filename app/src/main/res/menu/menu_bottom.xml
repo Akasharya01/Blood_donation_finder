@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
      <item
          android:id="@+id/home"
          android:title="Home"
-         app:showAsAction="ifRoom"
+
          android:icon="@drawable/ic_outline_home_24"/>
     <item
-        android:id="@+id/profile"
-        android:title="Profile"
-        app:showAsAction="ifRoom"
-        android:icon="@drawable/ic_outline_person_outline_24"/>
+        android:id="@+id/logout"
+        android:title="logout"
+        android:icon="@drawable/ic_baseline_logout_24"/>
     <item
         android:id="@+id/history"
         android:title="History"
-        app:showAsAction="ifRoom"
         android:icon="@drawable/ic_outline_history_24"/>
+        <item
+            android:id="@+id/donate"
+            android:title="Send Request for Donate blood"
+            android:icon="@drawable/ic_baseline_arrow_forward_24"/>
+        <item
+            android:id="@+id/aval"
+            android:title="Blood Available"
+            android:icon="@drawable/ic_baseline_arrow_forward_24"/>
+    </group>
 </menu>

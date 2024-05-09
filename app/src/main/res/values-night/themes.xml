@@ -1,10 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Xyz" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.Xyz" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#F44336</item>
-        <item name="colorPrimaryVariant">#818080</item>
-        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimary">#F83D7D</item>
+        <item name="colorPrimaryVariant">#F8729F</item>
+        <item name="colorOnPrimary">#E79FF3</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_200</item>

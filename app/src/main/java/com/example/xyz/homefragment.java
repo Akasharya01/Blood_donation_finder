@@ -18,6 +18,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
@@ -41,32 +49,47 @@ public class homefragment extends Fragment {
         mainActivity=getActivity();
         c1=v.findViewById(R.id.c1);
         c2=v.findViewById(R.id.c3);
-        c3=v.findViewById(R.id.c2);
+        c3=v.findViewById(R.id.c4);
+        internet in=new internet();
         c1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(in.isconnected(mainActivity)){
                 Intent i2=new Intent(mainActivity,application.class);
-                startActivity(i2);
+                startActivity(i2);}
+                else {
+                    Toast.makeText(mainActivity, "No Internet Connection", Toast.LENGTH_SHORT).show();
+                }
             }
         });
         c2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i2=new Intent(mainActivity,cmplist.class);
-                startActivity(i2);
+                if(in.isconnected(mainActivity)){
+                    Intent i2=new Intent(mainActivity,bloodavailable.class);
+                    startActivity(i2);
+                    }
+                else {
+                    Toast.makeText(mainActivity, "No Internet Connection", Toast.LENGTH_SHORT).show();
+                }
             }
         });
         c3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i2=new Intent(mainActivity,notice.class);
-                startActivity(i2);
+                if(in.isconnected(mainActivity)){
+                    startActivity(new Intent(mainActivity,Need_blood.class));
+                }
+                else {
+                    Toast.makeText(mainActivity, "No Internet Connection", Toast.LENGTH_SHORT).show();
+                }
             }
         });
-        al.add(R.drawable.h1);
-        al.add(R.drawable.h2);
-        al.add(R.drawable.h1);
-        al.add(R.drawable.h3);
+
+        al.add(R.drawable.b1);
+        al.add(R.drawable.b2);
+        al.add(R.drawable.b1);
+        al.add(R.drawable.b3);
         vp.setAdapter(new sliderAdapter(al,vp));
         vp.setClipToPadding(false);
         vp.setClipChildren(false);

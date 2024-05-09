@@ -5,166 +5,140 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="5dp"
-    android:background="@color/white"
+    android:background="#EF588C"
     tools:context=".loginpage">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical">
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="60dp"
-        android:src="@drawable/swaasth"
-        android:layout_marginRight="20dp"
-        android:layout_gravity="right"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:textSize="28dp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:fontFamily="@font/trebuc"
-        android:gravity="center"/>
         <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:gravity="center"
-        android:orientation="vertical">
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="330dp"
-            android:layout_height="wrap_content"
-            app:boxBackgroundColor="@color/white"
-            app:boxBackgroundMode="outline"
-            app:boxCornerRadiusBottomEnd="15dp"
-            app:boxCornerRadiusBottomStart="15dp"
-            app:boxCornerRadiusTopEnd="15dp"
-            app:boxCornerRadiusTopStart="15dp"
-            app:boxStrokeColor="@color/black"
-            app:endIconMode="clear_text"
-            app:endIconTint="@color/black"
-            app:hintTextColor="#171515"
-            app:startIconDrawable="@drawable/ic_baseline_person_24"
-            app:startIconTint="@color/black"
-            android:textColorHint="@color/black">
-
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/trebuc"
-                android:hint="Username"
-                android:inputType="textPersonName"
-                android:textColor="@color/black"
-                android:textColorHint="@color/black" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="330dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            app:boxBackgroundColor="@color/white"
-            app:boxBackgroundMode="outline"
-            app:boxCornerRadiusBottomEnd="15dp"
-            app:boxCornerRadiusBottomStart="15dp"
-            app:boxCornerRadiusTopEnd="15dp"
-            app:boxCornerRadiusTopStart="15dp"
-            app:endIconMode="password_toggle"
-            app:endIconTint="@color/black"
-            app:boxStrokeColor="@color/black"
-            app:hintTextColor="@color/black"
-            app:startIconDrawable="@drawable/ic_baseline_lock_24"
-            app:startIconTint="@color/black"
-            android:textColorHint="@color/black">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Password"
-                android:textColor="@color/black"
-                android:fontFamily="@font/trebuc"
-                android:textColorHint="@color/black"
-                android:inputType="textPassword" />
-        </com.google.android.material.textfield.TextInputLayout>
-        <TextView
-            android:layout_width="330dp"
-            android:layout_height="wrap_content"
-            android:text="forgot password?"
-            android:textAlignment="viewEnd"
-            android:layout_marginEnd="10dp"
-            android:textColor="@color/purple_700"
-            android:fontFamily="@font/trebuc"/>
-        <Button
-            android:id="@+id/btn"
-            android:layout_width="330dp"
-            android:layout_height="55dp"
-            android:layout_marginTop="40dp"
-            android:text="login"
-            android:textColor="@color/white"
-            android:background="@drawable/bg"
-            android:fontFamily="@font/trebuc"
-            android:textSize="16dp"/>
-        <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:text=".......... or continue with .........."
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:fontFamily="@font/trebuc"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginTop="40dp"
-        android:gravity="center"
-        android:orientation="horizontal">
-        <androidx.cardview.widget.CardView
-            android:layout_width="70dp"
+            android:layout_height="430dp"
+            android:gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/roundback"
+            android:orientation="vertical">
+        <ImageView
+            android:layout_width="50dp"
             android:layout_height="60dp"
-            app:cardCornerRadius="10dp"
-            app:cardBackgroundColor="@color/white">
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:src="@drawable/google"
+            android:src="@drawable/blood"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="right"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="@font/trebuc"
+                android:gravity="center"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:boxBackgroundColor="@color/white"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="15dp"
+                app:boxCornerRadiusBottomStart="15dp"
+                app:boxCornerRadiusTopEnd="15dp"
+                app:boxCornerRadiusTopStart="15dp"
+                app:boxStrokeColor="@color/black"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black"
+                app:hintTextColor="#171515"
+                app:startIconDrawable="@drawable/ic_baseline_person_24"
+                app:startIconTint="@color/black"
+                android:textColorHint="@color/black">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/trebuc"
+                    android:hint="Email"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:layout_marginStart="20dp"/>
-        </androidx.cardview.widget.CardView>
-        >
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_marginTop="30dp"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="Not a member?"
-            android:textColor="@color/black"
-            android:fontFamily="@font/trebuc"/>
-        <TextView
-            android:id="@+id/reg"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="Register now"
-            android:textColor="@color/purple_700"
-            android:fontFamily="@font/trebuc"/>
-    </LinearLayout>
-        <TextView
-            android:layout_width="wrap_content"
+                app:boxBackgroundColor="@color/white"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="15dp"
+                app:boxCornerRadiusBottomStart="15dp"
+                app:boxCornerRadiusTopEnd="15dp"
+                app:boxCornerRadiusTopStart="15dp"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:hintTextColor="@color/black"
+                app:startIconDrawable="@drawable/ic_baseline_lock_24"
+                app:startIconTint="@color/black"
+                android:textColorHint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/trebuc"
+                    android:textColorHint="@color/black"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:text="forgot password?"
+                android:textAlignment="viewEnd"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/purple_700"
+                android:fontFamily="@font/trebuc"/>
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="50dp"
+                android:text="login"
+                android:textColor="@color/white"
+                android:background="@drawable/bg"
+                android:fontFamily="@font/trebuc"
+                android:textSize="16dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="&#169;HCMS"
-            android:textSize="20dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="50dp"
-            android:textColor="@color/black"
-            android:gravity="bottom"/>
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Not a member?"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/trebuc"/>
+                <TextView
+                    android:id="@+id/reg"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Register now"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/trebuc"/>
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
+
 </ScrollView>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EE5D8E"
+    tools:context=".Need_blood">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/roundback"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Need Blood  Form"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:textColor="#FB216B"
+            android:textStyle="bold"
+            android:textSize="22dp"/>
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="Patient name"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/trebuc"/>
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:padding="7dp"
+            android:textSize="14dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg1"
+            android:fontFamily="@font/trebuc"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="Patient Age"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/trebuc"/>
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:textSize="14dp"
+            android:background="@drawable/bg1"
+            android:fontFamily="@font/trebuc"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="Blood unit(in ml)"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/trebuc"/>
+        <EditText
+            android:id="@+id/unit"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:textSize="14dp"
+            android:background="@drawable/bg1"
+            android:fontFamily="@font/trebuc"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="Blood group"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/trebuc"/>
+        <Spinner
+            android:id="@+id/blood_group"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/spi" />
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="Contact number*"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/trebuc"/>
+        <EditText
+            android:id="@+id/contact"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:padding="7dp"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/trebuc"
+            android:background="@drawable/bg1"/>
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="Reason"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/trebuc"/>
+        <EditText
+            android:id="@+id/reason"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:padding="7dp"
+            android:textSize="14dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:fontFamily="@font/trebuc"
+            android:background="@drawable/bg1"/>
+        <Button
+            android:id="@+id/request"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:text="send request"
+            android:fontFamily="@font/trebuc"
+            android:textSize="15dp"
+            android:layout_marginBottom="50dp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg"/>
+
+    </LinearLayout>
+</ScrollView>
